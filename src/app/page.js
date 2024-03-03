@@ -14,12 +14,12 @@ const Homepage = () => {
     >
       <div className="h-full flex flex-col px-4  sm:px-8 md:px-12 lg:px-20 lg:flex-row xl:px-48">
         {/* IMAGE CONTAINER */}
-        <div className="h-1/2 relative lg:h-full lg:w-1/2">
+        <div className="h-1/2 relative lg:h-full lg:w-1/2 ">
           <Image
             src="/hero.png"
             alt="profile image"
+            className="object-contain"
             fill
-            className="object-contain "
           />
         </div>
         {/* TEXT CONTAINER */}
