@@ -27,7 +27,7 @@ const Homepage = () => {
           {/* TITLE */}
           <h1 className="text-4xl font-bold md:text-6xl">
             Hi, I&apos;m{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-red-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">
               Serkan
             </span>
             .
