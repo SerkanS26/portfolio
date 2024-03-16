@@ -3,7 +3,7 @@ const items = [
     id: 1,
     color: "from-red-300 to-blue-300",
     title: "MERN Full Stack E-Commerce",
-    desc: "React, Redux Toolkit, NodeJS, Express, MongoDB, JWT, Paypal & Credit Card Payments, Admin Dashboard",
+    desc: "React, React Bootstrap, Redux Toolkit, NodeJS, Express, MongoDB, JWT, Paypal & Credit Card Payments, Admin Dashboard, Responsive Design",
     img: "/techshop.png",
     link: "https://techshop.up.railway.app",
     github: "https://github.com/SerkanS26/techshop",
@@ -23,7 +23,7 @@ const items = [
     title: "Admin Dashboard UI",
     desc: "React, Css, Material UI Icons, Recharts",
     img: "/adminDashboardUi.png",
-    link: "react-admin-dashboard.up.railway.app",
+    link: "https://react-admin-dashboard.up.railway.app",
     github: "https://github.com/SerkanS26/React-Admin-Dashboard",
   },
 ];

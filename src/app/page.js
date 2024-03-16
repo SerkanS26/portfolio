@@ -14,26 +14,30 @@ const Homepage = () => {
     >
       <div className="h-full flex flex-col px-4  sm:px-8 md:px-12 lg:px-20 lg:flex-row xl:px-48">
         {/* IMAGE CONTAINER */}
-        <div className="h-1/2 relative lg:h-full lg:w-1/2 ">
+        <div className="h-1/2 relative lg:h-full lg:w-1/2">
           <Image
-            src="/hero.png"
+            src="/profile.jpg"
             alt="profile image"
-            className="object-contain"
+            className="object-cover px-5 py-2 rounded-br-[100px] rounded-tl-[100px] "
             fill
           />
         </div>
         {/* TEXT CONTAINER */}
-        <div className="h-1/2 flex flex-col gap-8 items-center justify-center lg:h-full lg:w-1/2">
+        <div className="h-1/2 flex flex-col gap-8 items-center justify-center lg:h-full lg:w-1/2 px-10">
           {/* TITLE */}
           <h1 className="text-4xl font-bold md:text-6xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Hi, I&apos;m{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-red-500">
+              Serkan
+            </span>
+            .
           </h1>
           {/* DESC */}
           <p className="md:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-            aperiam amet error consequuntur, deleniti optio corrupti,
-            necessitatibus reprehenderit repellat unde ipsam ratione nisi magni.
-            Rem quia iure nulla explicabo accusantium.
+            A web developer with a focus on the MERN stack, but still exploring
+            other technologies and frameworks that catch my interest! if
+            you&apos;re looking for a developer to add to your team, I&apos;d
+            love to hear from you!
           </p>
           {/*BUTTONS*/}
           <div className="flex gap-4 w-full ">

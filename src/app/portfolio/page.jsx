@@ -23,14 +23,14 @@ const PortfolioPage = () => {
         </div>
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
           <motion.div style={{ x }} className="flex">
-            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" />
+            <div className=" h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" />
             {items.map((item) => (
               <div
                 className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
                 key={item.id}
               >
-                <div className="flex flex-col gap-8 text-white">
-                  <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-7xl">
+                <div className=" flex flex-col gap-8 text-white lg:h-[95%]">
+                  <h1 className="  text-xl font-bold md:text-4xl lg:text-6xl xl:text-7xl">
                     {item.title}
                   </h1>
                   <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
@@ -41,11 +41,11 @@ const PortfolioPage = () => {
                       fill
                     />
                   </div>
-                  <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
+                  <p className="w-80 md:w96 lg:w-[500px] xl:w-[600px] lg:text-lg ">
                     {item.desc}
                   </p>
                   {/* buttons */}
-                  <div className="flex justify-end">
+                  <div className=" flex justify-end">
                     <Link href={item.github} target="blank" className="">
                       {" "}
                       <button className="flex justify-center items-center gap-2 p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
@@ -91,9 +91,10 @@ const PortfolioPage = () => {
               </textPath>
             </text>
           </motion.svg>
+
           <Link
             href="/contact"
-            className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
+            className="w-16 h-16 md:w-28 md:h-28 absolute top-0 bottom-0 left-0 right-0  m-auto bg-black text-blue-50  rounded-full flex items-center justify-center"
           >
             Hire Me
           </Link>
