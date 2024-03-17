@@ -5,11 +5,21 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import items from "../projects";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+
 const PortfolioPage = () => {
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({ target: ref });
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"]);
+
+  // router
+  const router = useRouter();
+
+  const buttonHandler = () => {
+    router.push("/contact", { scroll: false });
+  };
+
   return (
     <motion.div
       className="h-full"
@@ -38,7 +48,7 @@ const PortfolioPage = () => {
                       className="object-cover"
                       src={item.img}
                       alt={item.title}
-                      fill
+                      fill="responsive"
                     />
                   </div>
                   <p className="w-80 md:w96 lg:w-[500px] xl:w-[600px] lg:text-lg ">
@@ -77,7 +87,8 @@ const PortfolioPage = () => {
             animate={{ rotate: 360 }}
             transition={{ duration: 8, ease: "linear", repeat: Infinity }}
             viewBox="0 0 300 300"
-            className="w-64 h-64 md:w-[500px] md:h-[500px]"
+            className="w-64 h-64 md:w-[500px] md:h-[500px] rounded-full cursor-pointer"
+            onClick={buttonHandler}
           >
             <defs>
               <path
@@ -92,12 +103,19 @@ const PortfolioPage = () => {
             </text>
           </motion.svg>
 
-          <Link
+          {/* <Link
             href="/contact"
             className="w-16 h-16 md:w-28 md:h-28 absolute top-0 bottom-0 left-0 right-0  m-auto bg-black text-blue-50  rounded-full flex items-center justify-center"
           >
             Hire Me
-          </Link>
+          </Link> */}
+
+          <button
+            onClick={buttonHandler}
+            className="w-16 h-16 md:w-28 md:h-28 absolute top-0 bottom-0 left-0 right-0  m-auto  bg-black text-blue-50  rounded-full flex items-center justify-center"
+          >
+            Hire Me
+          </button>
         </div>
       </div>
     </motion.div>
