@@ -45,7 +45,7 @@ const AboutPage = () => {
               completing a course at BeCode in Antwerp, I have gained experience
               in developing web applications and working with various frameworks
               such as <strong>Tailwind CSS</strong> and{" "}
-              <strong>Bootstrap</strong> . Although my focus is on{" "}
+              <strong>Bootstrap</strong>. Although my focus is on{" "}
               <strong>MERN-stack development</strong>, I am always excited to
               learn new technologies. I am currently looking for a career switch
               and am actively seeking a role that fits my skills and interests.
