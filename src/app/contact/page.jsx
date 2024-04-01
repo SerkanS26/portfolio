@@ -66,17 +66,23 @@ const ContactPage = () => {
         </div>
         {/* FORM CONTAINER */}
 
+        {/* <form
+          onSubmit={sendEmail}
+          ref={form}
+          className="h-1/2 lg:h-full lg:w-1/2  bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24 xs:bg-green-100 xs:h-full xs:w-full xs:p-8 sm:bg-blue-100 sm:h-full sm:w-full sm:p-8 md:bg-yellow-100 md:h-full md:w-full md:p-8 lg:bg-red-100 lg:h-full lg:w-full lg:p-8 xl:bg-purple-100 xl:h-full xl:w-full xl:p-8"
+        > */}
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+          className="h-1/2 lg:h-full lg:w-1/2  bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24  xs:h-full xs:w-full xs:p-8 "
         >
-          <span>Dear Serkan Safran,</span>
+          <span className="">Dear Serkan Safran,</span>
           <textarea
             name="user_message"
             rows={6}
-            className="bg-transparent border-b-2 border-b-black outline-none resize-none"
+            className="bg-transparent border-b-2 border-b-black outline-none resize-none lg:w-full sm:py-7 xs:py-7"
           />
+
           <span>My mail address is:</span>
           <input
             name="user_email"

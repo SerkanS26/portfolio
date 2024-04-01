@@ -40,10 +40,22 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">ABOUT ME</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              harum quibusdam cupiditate nobis accusamus sed aut aperiam,
-              reiciendis numquam! Voluptas voluptatibus obcaecati dolore itaque
-              suscipit! Vel doloremque numquam quam nihil.
+              Hello, I am a passionate professional with a background in the
+              safety sector and a growing interest in web development. After
+              completing a course at BeCode in Antwerp, I have gained experience
+              in developing web applications and working with various frameworks
+              such as <strong>Tailwind CSS</strong> and{" "}
+              <strong>Bootstrap</strong> . Although my focus is on{" "}
+              <strong>MERN-stack development</strong>, I am always excited to
+              learn new technologies. I am currently looking for a career switch
+              and am actively seeking a role that fits my skills and interests.
+              For me, a positive work environment with collegial collaboration
+              is of great importance. I strongly believe in my ability to learn
+              quickly and am highly motivated to further develop my skills.{" "}
+              <br />
+              <br />
+              Thank you for visiting my portfolio website. I appreciate your
+              time and look forward to potential collaboration opportunities!
             </p>
 
             {/* BIOGRAPHY SCROLL SVG */}
