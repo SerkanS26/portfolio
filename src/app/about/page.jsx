@@ -49,10 +49,8 @@ const AboutPage = () => {
               <strong>MERN-stack development</strong>, I am always excited to
               learn new technologies. I am currently looking for a career switch
               and am actively seeking a role that fits my skills and interests.
-              For me, a positive work environment with collegial collaboration
-              is of great importance. I strongly believe in my ability to learn
-              quickly and am highly motivated to further develop my skills.{" "}
-              <br />
+              I strongly believe in my ability to learn quickly and am highly
+              motivated to further develop my skills. <br />
               <br />
               Thank you for visiting my portfolio website. I appreciate your
               time and look forward to potential collaboration opportunities!
