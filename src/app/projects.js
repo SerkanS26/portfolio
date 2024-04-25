@@ -23,8 +23,8 @@ const items = [
     title: "Admin Dashboard UI",
     desc: "React, Scss, Material UI Datagrid, Recharts, Responsive Design",
     img: "/adminDashBoardUi.png",
-    link: "https://react-dashboard-ui.up.railway.app/",
-    github: "https://github.com/SerkanS26/react-dashboard-ui",
+    link: "https://admin-dashboard-ui.up.railway.app/",
+    github: "https://github.com/SerkanS26/admin-dashboard-ui/",
   },
 ];
 
