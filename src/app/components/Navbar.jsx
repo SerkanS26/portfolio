@@ -105,7 +105,7 @@ const Navbar = () => {
         </Link>
       </div>
       {/* RESPONSIVE MENU */}
-      <div className="md:hidden">
+      <div className="md:hidden ">
         {/* MENU BUTTON */}
         <button
           onClick={() => setMenuOpen((prev) => !prev)}
@@ -128,6 +128,7 @@ const Navbar = () => {
           ></motion.div>
         </button>
         {/* MENU LIST */}
+
         {menuOpen && (
           <motion.div
             variants={listVariants}

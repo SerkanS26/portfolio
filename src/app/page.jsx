@@ -20,6 +20,10 @@ const Homepage = () => {
             alt="profile image"
             className="object-cover px-5 py-2 rounded-br-[100px] rounded-tl-[100px] "
             fill
+            priority={true}
+            width={0}
+            height={0}
+            sizes="100vw"
           />
         </div>
         {/* TEXT CONTAINER */}
