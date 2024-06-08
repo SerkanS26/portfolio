@@ -1,5 +1,6 @@
 "use client";
 
+import { TbWorldWww } from "react-icons/tb";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -31,7 +32,7 @@ const ProjectCard = ({ project }) => {
 
           <div className="border border-gray-200 mb-5"></div>
 
-          <div className="flex flex-col lg:flex-row justify-between gap-3">
+          <div className="flex flex-col lg:flex-row justify-between ">
             <Link
               href={project.github}
               target="blank"
@@ -44,9 +45,10 @@ const ProjectCard = ({ project }) => {
             <Link
               href={project.link}
               target="blank"
-              className="h-[36px] flex gap-2 justify-center bg-gray-100 hover:bg-primary text-black px-4 py-2 ml-2 rounded-lg text-center text-sm"
+              className="h-[36px] flex gap-2 justify-center items-center  bg-gray-100 hover:bg-primary text-black px-4 py-2 ml-2 rounded-lg text-center text-sm"
             >
-              See Demo
+              <TbWorldWww className="text-xl" />
+              Demo
             </Link>
           </div>
         </div>
