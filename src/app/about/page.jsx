@@ -40,8 +40,30 @@ const AboutPage = () => {
             {/* BIOGRAPHY TITLE */}
             <h1 className="font-bold text-2xl">ABOUT ME</h1>
             {/* BIOGRAPHY DESC */}
-            <p className="text-lg">
-              Hello, I am a passionate professional with a background in the
+            <div className="text-lg">
+              <h2 className="mb-2 font-bold">Front-end</h2>
+              <p className="mb-3">
+                Have hands-on experience with modern front-end technologies such
+                as HTML, CSS, JavaScript ,Material UI, Tailwind, and frameworks
+                like ReactJS, NextJS
+              </p>
+
+              <h2 className="mb-2 font-bold">Back-end</h2>
+              <p className="mb-3">
+                Have been working on the server-side, handling databases, and
+                building server logic using technologies like Next.js, Node.js
+                and Express.js. Comfortable with RESTful API development and can
+                work with databases like MongoDB and MySQL.
+              </p>
+              <h2 className="mb-2 font-bold">Full-Stack Proficiency</h2>
+              <p className="mb-3">
+                The goal is to bridge the gap between front-end and back-end
+                development, ensuring seamless data flow and a delightful user
+                experience. Being excited about the challenges of full-stack
+                development and strive to create robust, efficient, and scalable
+                applications.
+              </p>
+              {/* Hello, I am a passionate professional with a background in the
               safety sector and a growing interest in web development. After
               completing a course at BeCode in Antwerp, I have gained experience
               in developing web applications and working with various frameworks
@@ -55,7 +77,8 @@ const AboutPage = () => {
               <br />
               Thank you for visiting my portfolio website. I appreciate your
               time and look forward to potential collaboration opportunities!
-            </p>
+             */}
+            </div>
 
             {/* BIOGRAPHY SCROLL SVG */}
             <motion.svg

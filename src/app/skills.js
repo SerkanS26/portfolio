@@ -9,7 +9,13 @@ const items = [
     name: "JavaScript",
   },
   {
-    name: "React",
+    name: "React.js",
+  },
+  {
+    name: "Next.js",
+  },
+  {
+    name: "Material UI",
   },
   {
     name: "React Bootstrap",

@@ -20,6 +20,15 @@ const items = [
   {
     id: 3,
     color: "from-violet-300 to-purple-300",
+    title: "Next js Full Stack Property App",
+    desc: "Next.js, Tailwind, Mapbox, Photoswipe, Framer-motion, MongoDB, Next-Auth, Cloudinary ,Responsive Design",
+    img: "/Nestopia.png",
+    link: "https://nestopia.up.railway.app/",
+    github: "https://github.com/SerkanS26/Nestopia",
+  },
+  {
+    id: 4,
+    color: "from-violet-300 to-purple-300",
     title: "Admin Dashboard UI",
     desc: "React, Scss, Material UI Datagrid, Recharts, Responsive Design",
     img: "/adminDashBoardUi.png",
