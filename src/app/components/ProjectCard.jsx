@@ -36,7 +36,7 @@ const ProjectCard = ({ project }) => {
             <Link
               href={project.github}
               target="blank"
-              className="h-[36px] flex gap-2 justify-center items-center bg-gray-100 hover:bg-primary text-black px-4 py-2 ml-2 rounded-lg text-center text-sm"
+              className="h-[36px] flex gap-2 justify-center items-center bg-gray-100 hover:bg-gray-200 text-black px-4 py-2 ml-2 rounded-lg text-center text-sm"
             >
               <Image src="/github.png" width={24} height={24} alt="github" />
               Github
@@ -45,7 +45,7 @@ const ProjectCard = ({ project }) => {
             <Link
               href={project.link}
               target="blank"
-              className="h-[36px] flex gap-2 justify-center items-center  bg-gray-100 hover:bg-primary text-black px-4 py-2 ml-2 rounded-lg text-center text-sm"
+              className="h-[36px] flex gap-2 justify-center items-center  bg-gray-100 hover:bg-gray-200 text-black px-4 py-2 ml-2 rounded-lg text-center text-sm"
             >
               <TbWorldWww className="text-xl" />
               Demo

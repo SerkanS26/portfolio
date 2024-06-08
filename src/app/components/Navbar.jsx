@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import NavLink from "./NavLink";
+import { Router } from "next/router";
 
 import { motion } from "framer-motion";
 
@@ -17,6 +18,7 @@ const links = [
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const router = Router;
 
   const topVariants = {
     closed: {
@@ -73,7 +75,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-full flex items-center justify-between px-4 text-xl sm:px-8 md:px-12 lg:px-20 xl:px-48">
+    <div className="h-full flex items-center justify-end px-4 text-xl sm:px-8 md:px-12 lg:px-20 xl:px-48">
       {/* NAVIGATION LINKS */}
       <div className="hidden gap-4 w-1/3 md:flex">
         {links.map((link) => (
@@ -81,17 +83,7 @@ const Navbar = () => {
         ))}
       </div>
       {/* LOGO */}
-      <div className=" w-1/3 sm:justify-center md:hidden lg:flex xl:justify-center">
-        <Link
-          href="/"
-          className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center"
-        >
-          <span className="text-white mr-1">Serkan</span>
-          <span className="w-16 h-8 rounded bg-white text-black flex items-center justify-center">
-            SAFRAN
-          </span>
-        </Link>
-      </div>
+
       {/* SOCIAL LINKS */}
       <div className="hidden md:flex gap-4 w-1/3 md:justify-center">
         <Link href="https://github.com/SerkanS26" target="blank">
@@ -105,7 +97,7 @@ const Navbar = () => {
         </Link>
       </div>
       {/* RESPONSIVE MENU */}
-      <div className="md:hidden ">
+      <div className="md:hidden">
         {/* MENU BUTTON */}
         <button
           onClick={() => setMenuOpen((prev) => !prev)}
