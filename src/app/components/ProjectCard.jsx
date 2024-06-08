@@ -32,7 +32,7 @@ const ProjectCard = ({ project }) => {
 
           <div className="border border-gray-200 mb-5"></div>
 
-          <div className="flex flex-col lg:flex-row justify-between ">
+          <div className="flex flex-col lg:flex-row justify-between gap-3">
             <Link
               href={project.github}
               target="blank"
