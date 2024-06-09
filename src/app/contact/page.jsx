@@ -47,7 +47,7 @@ const ContactPage = () => {
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
-          <div className="text-blue-400">
+          <div className="text-gray-400">
             {text.split("").map((letter, index) => (
               <motion.span
                 key={index}
@@ -74,7 +74,7 @@ const ContactPage = () => {
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2  bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24  xs:h-full xs:w-full xs:p-8 "
+          className="h-1/2 lg:h-full lg:w-1/2  bg-gray-100 rounded-xl text-xl flex flex-col gap-8 justify-center p-24  xs:h-full xs:w-full xs:p-8 "
         >
           <span className="">Dear Serkan Safran,</span>
           <textarea
@@ -90,7 +90,7 @@ const ContactPage = () => {
             className="bg-transparent border-b-2 border-b-black outline-none "
           />
           <span>Regards</span>
-          <button className="bg-blue-200 rounded font-semibold text-gray-600 p-4">
+          <button className="bg-gray-300  hover:bg-gray-200 rounded font-semibold text-gray-600 p-4">
             Send
           </button>
           {success && (
